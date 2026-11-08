@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- Struktur fail: <head> = maklumat halaman & link ke CSS. <body> = apa yang pelawat nampak. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | SCST1133 E-Portfolio</title>
+  <meta name="description" content="SCST1133 e-portfolio: profile, learning journey, selected work and reflections.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- SIDEBAR: logo, nama, menu. Menu guna #id untuk lompat ke section -->
+    <header class="side">
+      <!-- Logo rasmi: letak fail asal dalam folder images/. JANGAN ubah saiz/warna. CSS hanya set width, height auto -->
+      <img class="logo" src="images/utm-faculty-computing-logo.png" alt="UTM Faculty of Computing logo">
+      <h1 class="name">Your<br>Name</h1>
+      <p class="role">Computing student | Data engineering</p>
+      <nav class="nav" aria-label="Main">
+        <a href="#profile">Home &amp; Profile</a>
+        <a href="#journey">Learning Journey</a>
+        <a href="#work">Selected Work</a>
+        <a href="#summary">Course Summary</a>
+        <a href="#sources">Sources</a>
+      </nav>
+      <a class="gh" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">github.com/YOUR-USERNAME</a>
+    </header>
+
+    <main class="main">
+
+      <!-- A. HOME & PROFESSIONAL PROFILE -->
+      <section id="profile">
+        <h2>Home and professional profile</h2>
+        <img class="avatar" src="images/profile-photo.jpg" alt="Profile photo of Your Name" width="160" height="160">
+        <p class="headline"><span class="todo">[Professional headline, e.g. Computing student interested in data engineering]</span></p>
+        <p><span class="todo">[Short summary: who you are, why data engineering, what you hope to do.]</span></p>
+        <dl class="facts">
+          <dt>Programme</dt><dd><span class="todo">[Your programme]</span></dd>
+          <dt>Education</dt><dd><span class="todo">[Faculty, university, year]</span></dd>
+          <dt>Role</dt><dd><span class="todo">[Optional: club, committee or work role]</span></dd>
+          <dt>Interests</dt><dd><span class="todo">[e.g. data pipelines, databases, analytics]</span></dd>
+        </dl>
+        <h3>Technical skills</h3>
+        <ul class="chips">
+          <li>HTML</li><li>CSS</li><li>Git &amp; GitHub</li><li><span class="todo">[add yours]</span></li>
+        </ul>
+        <h3>Courses, certificates, workshops and badges</h3>
+        <ul><li><span class="todo">[Optional: add what you have completed]</span></li></ul>
+        <p class="links">
+          <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub profile</a>
+          <a href="https://YOUR-USERNAME.github.io/REPOSITORY/" target="_blank" rel="noopener">This e-portfolio</a>
+          <a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">LinkedIn (optional)</a>
+        </p>
+        <!-- PRIVASI: jangan letak no. telefon, alamat rumah, password atau token -->
+      </section>
+
+      <!-- B. LEARNING JOURNEY -->
+      <section id="journey">
+        <h2>Learning journey</h2>
+        <p>How the SCST1133 topics connect, from the basics to emerging areas.</p>
+        <ul class="journey">
+          <li><strong>Foundations</strong> <span class="todo">[what you learned and how it links to the next topic]</span></li>
+          <li><strong>Tools</strong> <span class="todo">[...]</span></li>
+          <li><strong>Data landscape</strong> <span class="todo">[...]</span></li>
+          <li><strong>Industry</strong> <span class="todo">[...]</span></li>
+          <li><strong>Lifecycle</strong> <span class="todo">[...]</span></li>
+          <li><strong>Acquisition</strong> <span class="todo">[...]</span></li>
+          <li><strong>Governance</strong> <span class="todo">[...]</span></li>
+          <li><strong>Ethics</strong> <span class="todo">[...]</span></li>
+          <li><strong>Emerging areas</strong> <span class="todo">[...]</span></li>
+        </ul>
+      </section>
+
+      <!-- C + D. SELECTED WORK & REFLECTION: setiap artifact = 1 <article>. Salin blok ini untuk tambah artifact baru -->
+      <section id="work">
+        <h2>Selected work and reflections</h2>
+
+        <article class="artifact" id="figma">
+          <h3>Design Thinking and Figma</h3>
+          <ul class="evidence">
+            <li>Problem and idea: <span class="todo">[...]</span></li>
+            <li>My contribution: <span class="todo">[...]</span></li>
+            <li>Prototype: <a href="#">Figma link</a> | Screenshots: <span class="todo">[images/figma-1.png]</span></li>
+          </ul>
+          <h4>Reflection</h4>
+          <dl>
+            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
+            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
+          </dl>
+        </article>
+
+        <article class="artifact" id="talk">
+          <h3>Industry Talk</h3>
+          <ul class="evidence">
+            <li>Poster, notes or report: <a href="artifacts/industry-talk.pdf">industry-talk.pdf</a></li>
+            <li>Key lessons: <span class="todo">[...]</span></li>
+          </ul>
+          <h4>Reflection</h4>
+          <dl>
+            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
+            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
+          </dl>
+        </article>
+
+        <article class="artifact" id="visit">
+          <h3>Industry Visit</h3>
+          <ul class="evidence">
+            <li>Approved photographs or evidence: <span class="todo">[images/visit-1.jpg]</span></li>
+            <li>Observations and report: <span class="todo">[...]</span></li>
+          </ul>
+          <h4>Reflection</h4>
+          <dl>
+            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
+            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
+          </dl>
+        </article>
+
+        <article class="artifact" id="video">
+          <h3>Data Engineering Lifecycle Video</h3>
+          <ul class="evidence">
+            <li>Video link: <a href="#">Watch the video</a></li>
+            <li>Storyboard or slides: <span class="todo">[...]</span></li>
+            <li>Lifecycle decisions: <span class="todo">[...]</span></li>
+          </ul>
+          <h4>Reflection</h4>
+          <dl>
+            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
+            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
+          </dl>
+        </article>
+
+        <article class="artifact" id="other">
+          <h3>Other Selected Evidence</h3>
+          <ul class="evidence">
+            <li>Data acquisition work (dataset, method, tools, data quality, output): <span class="todo">[...]</span></li>
+            <li>Presentation slides, demo or externally hosted work: <span class="todo">[...]</span></li>
+          </ul>
+          <h4>Reflection</h4>
+          <dl>
+            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
+            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
+            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
+          </dl>
+        </article>
+      </section>
+
+      <!-- E. COURSE LEARNING SUMMARY -->
+      <section id="summary">
+        <h2>Course learning summary</h2>
+        <p><span class="todo">[Knowledge and skills gained.]</span></p>
+        <p><span class="todo">[How the course changed your understanding of data engineering.]</span></p>
+        <p><span class="todo">[Areas you want to develop further.]</span></p>
+      </section>
+
+      <!-- F. SOURCES & ACKNOWLEDGEMENTS -->
+      <section id="sources">
+        <h2>Sources and acknowledgements</h2>
+        <ul>
+          <li>Data, images, code, text and templates: <span class="todo">[credit each one]</span></li>
+          <li>Digital or AI tools used, when and how: <span class="todo">[follow the course instructions]</span></li>
+          <li>Logo: UTM Faculty of Computing (official, unchanged)</li>
+        </ul>
+      </section>
+
+      <footer class="foot">&copy; 2026 Your Name</footer>
+    </main>
+
+  </div>
+</body>
+</html>
