@@ -1,0 +1,74 @@
+/* 1. VARIABLES: tukar warna/font di sini sekali, semua tempat ikut */
+:root {
+  --bg: #f2f4f7;
+  --ink: #14213d;
+  --muted: #5b6577;
+  --line: #d9dee6;
+  --accent: #2f4bff;
+  --panel: #ffffff;
+  --head: "Bricolage Grotesque", "Segoe UI", Arial, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+
+/* Mode gelap automatik ikut tetapan peranti */
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #101624; --ink: #e8ecf5; --muted: #9aa5ba; --line: #26304a; --accent: #7f93ff; --panel: #172036; }
+}
+
+/* 2. ASAS */
+*, *::before, *::after { box-sizing: border-box; } /* width termasuk padding & border */
+html { scroll-behavior: smooth; }                  /* klik menu = skrol lembut */
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.65; }
+a { color: var(--accent); }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; } /* untuk pengguna keyboard */
+
+/* 3. LAYOUT: CSS Grid, 2 lajur (sidebar | kandungan) */
+.layout { display: grid; grid-template-columns: minmax(260px, 340px) 1fr; max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+.side { position: sticky; top: 0; align-self: start; height: 100vh; overflow-y: auto; padding: 2.5rem 2rem 2rem 0; display: flex; flex-direction: column; }
+.main { padding: 4rem 0 3rem 2rem; max-width: 46rem; }
+
+/* 4. SIDEBAR */
+.logo { width: 200px; height: auto; margin-bottom: 1.5rem; } /* height:auto = nisbah logo kekal */
+.name { font-family: var(--head); font-weight: 800; font-size: clamp(2.6rem, 5vw, 4rem); line-height: 0.95; letter-spacing: -0.03em; margin: 0 0 1rem; }
+.role { margin: 0 0 2rem; color: var(--muted); }
+.nav { display: flex; flex-direction: column; gap: 0.4rem; }
+.nav a { color: var(--ink); text-decoration: none; font-weight: 600; padding: 0.2rem 0 0.2rem 0.9rem; border-left: 3px solid var(--line); }
+.nav a:hover { border-left-color: var(--accent); color: var(--accent); }
+.gh { margin-top: auto; padding-top: 1.5rem; font-weight: 600; word-break: break-all; }
+
+/* 5. KANDUNGAN */
+section { margin-bottom: 4rem; scroll-margin-top: 2rem; }
+h2 { font-family: var(--head); font-size: 1.75rem; letter-spacing: -0.01em; margin: 0 0 1rem; }
+h3 { font-family: var(--head); font-size: 1.2rem; margin: 1.5rem 0 0.4rem; }
+h4 { font-family: var(--head); font-size: 1rem; margin: 1.25rem 0 0.4rem; }
+
+.avatar { border-radius: 50%; object-fit: cover; border: 3px solid var(--line); margin-bottom: 1rem; }
+.headline { font-family: var(--head); font-size: 1.3rem; font-weight: 600; }
+.facts, .artifact dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1.25rem; margin: 1rem 0; }
+.facts dt, .artifact dt { font-weight: 600; }
+.facts dd, .artifact dd { margin: 0; }
+
+.chips, .links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.chips li { border: 1px solid var(--line); background: var(--panel); border-radius: 999px; padding: 0.3rem 1rem; font-weight: 600; }
+.links { gap: 0.5rem 1.5rem; font-weight: 600; }
+
+.journey { padding-left: 1.2rem; }
+.journey li { margin-bottom: 0.5rem; }
+
+.artifact { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: 1rem 1.5rem 1.25rem; margin-bottom: 1.5rem; }
+.artifact h3 { margin-top: 0.5rem; }
+.evidence { padding-left: 1.2rem; }
+
+.todo { border-bottom: 1px dashed var(--accent); color: var(--muted); } /* penanda tempat isi: cari & ganti */
+.foot { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); padding-top: 1.25rem; }
+
+/* 6. RESPONSIVE: skrin <= 800px, sidebar jadi atas */
+@media (max-width: 800px) {
+  .layout { grid-template-columns: 1fr; }
+  .side { position: static; height: auto; padding: 2rem 0 0; }
+  .nav { flex-direction: row; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
+  .nav a { border-left: 0; border-bottom: 3px solid var(--line); padding: 0.1rem 0; }
+  .main { padding: 2.5rem 0; }
+  .facts, .artifact dl { grid-template-columns: 1fr; gap: 0.1rem; }
+  .artifact dd { margin-bottom: 0.6rem; }
+}
