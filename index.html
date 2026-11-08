@@ -1,183 +1,192 @@
 <!DOCTYPE html>
-<!-- Struktur fail: <head> = maklumat halaman & link ke CSS. <body> = apa yang pelawat nampak. -->
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | SCST1133 E-Portfolio</title>
-  <meta name="description" content="SCST1133 e-portfolio: profile, learning journey, selected work and reflections.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GesturePortal - Control Your Webcam With Hand Gestures</title>
+<meta name="description" content="GesturePortal is a local gesture-controlled AI webcam portal built with MediaPipe and ComfyUI. Full-scene styling with Portrait v2, FLUX and Qwen. Easy Windows download for non-technical users." />
+<meta name="keywords" content="anime, comfyui, computer-vision, flux, gesture-control, image-to-image, local-ai, mediapipe, python, qwen, webcam, windows, GesturePortal" />
+<meta name="author" content="GesturePortal" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#6c5ce7" />
+<link rel="canonical" href="https://github.com/Bessbuggy762/GesturePortal" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="GesturePortal - Control Your Webcam With Hand Gestures" />
+<meta property="og:description" content="A local gesture-controlled AI webcam portal built with MediaPipe and ComfyUI. Full-scene styling with Portrait v2, FLUX and Qwen." />
+<meta property="og:url" content="https://github.com/Bessbuggy762/GesturePortal" />
+<meta property="og:site_name" content="GesturePortal" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GesturePortal - Control Your Webcam With Hand Gestures" />
+<meta name="twitter:description" content="A local gesture-controlled AI webcam portal built with MediaPipe and ComfyUI. Full-scene styling with Portrait v2, FLUX and Qwen." />
 </head>
-<body>
-  <div class="layout">
+<body style="margin:0; padding:0; background-color:#f5f6fa; color:#22262f; font-family:'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif; font-size:17px; line-height:1.7; -webkit-font-smoothing:antialiased;">
 
-    <!-- SIDEBAR: logo, nama, menu. Menu guna #id untuk lompat ke section -->
-    <header class="side">
-      <!-- Logo rasmi: letak fail asal dalam folder images/. JANGAN ubah saiz/warna. CSS hanya set width, height auto -->
-      <img class="logo" src="LOGO FAKULTI COMPUTING.png" alt="UTM Faculty of Computing logo">
-      <h1 class="name">MUHAMMAD AQIL HARITH<br>BIN LUKMAN</h1>
-      <p class="role">Computing student | Data engineering</p>
-      <nav class="nav" aria-label="Main">
-        <a href="#profile">Home &amp; Profile</a>
-        <a href="#journey">Learning Journey</a>
-        <a href="#work">Selected Work</a>
-        <a href="#summary">Course Summary</a>
-        <a href="#sources">Sources</a>
-      </nav>
-      <a class="gh" href="https://github.com/AqilHarith" target="_blank" rel="noopener">github.com/YOUR-USERNAME</a>
-    </header>
+<div style="max-width:880px; margin:0 auto; padding:32px 20px 64px 20px;">
 
-    <main class="main">
+  <header style="text-align:center; padding:24px 0 8px 0;">
+    <h1 style="font-size:2.1em; line-height:1.25; margin:0 0 16px 0; color:#1b1f2a; font-weight:700; letter-spacing:-0.4px;">
+      🎨 GesturePortal - Turn Hand Gestures Into Stunning Art
+    </h1>
+    <p style="font-size:1.08em; color:#4a5162; margin:0 auto 26px auto; max-width:640px;">
+      A local gesture-controlled AI webcam portal built with MediaPipe and ComfyUI. Full-scene styling with Portrait v2, FLUX and Qwen — all running on your own computer.
+    </p>
+    <p style="margin:0 0 10px 0;">
+      <a href="https://github.com/Bessbuggy762/GesturePortal" style="display:inline-block; padding:18px 42px; background:linear-gradient(135deg, #ff6b6b 0%, #6c5ce7 50%, #00b894 100%); color:#ffffff; text-decoration:none; font-size:1.15em; font-weight:700; border-radius:14px; box-shadow:0 10px 24px rgba(108,92,231,0.35); letter-spacing:0.3px;">
+        ⬇️ Download GesturePortal
+      </a>
+    </p>
+    <p style="font-size:0.92em; color:#7a8194; margin:0;">
+      Free, open source, and designed for Windows users.
+    </p>
+  </header>
 
-      <!-- A. HOME & PROFESSIONAL PROFILE -->
-      <section id="profile">
-        <h2>Home and professional profile</h2>
-        <img class="avatar" src="images/profile-photo.jpg" alt="Profile photo of Your Name" width="160" height="160">
-        <p class="headline"><span class="todo">[Computing student interested in data engineering]</span></p>
-        <p><span class="todo">[Computer Science (Data Engineering) student at UTM passionate about building reliable data pipelines and scalable backend architecture. Combining background in system design with hands-on project execution. Looking to apply data engineering principles to build robust data infrastructure.]</span></p>
-        <dl class="facts">
-          <dt>Programme</dt><dd><span class="todo">[Bachelor In Computer Science (Data Engineering) With Honours]</span></dd>
-          <dt>Education</dt><dd><span class="todo">[Faculty Computing,Universiti Teknologi Malaysia, 2026/2027]</span></dd>
-          <dt>Role</dt><dd><span class="todo">[SRC,PESAKA,PROSIS]</span></dd>
-          <dt>Interests</dt><dd><span class="todo">[e.g. data pipelines, databases, analytics]</span></dd>
-        </dl>
-        <h3>Technical skills</h3>
-        <ul class="chips">
-          <li>HTML</li><li>CSS</li><li>Git &amp; GitHub</li><li><span class="todo">[JAVA]</span></li>
-        </ul>
-        <h3>Courses, certificates, workshops and badges</h3>
-        <ul><li><span class="todo">[SOON ADD]</span></li></ul>
-        <p class="links">
-          <a href="https://github.com/AqilHarith" target="_blank" rel="noopener">GitHub profile</a>
-          <a href="https://aqilharith1003-source.github.io/aqilharith1003.github.io/#sources" target="_blank" rel="noopener">This e-portfolio</a>
-          <a href="www.linkedin.com/in/aqil-harith-5562b8445" target="_blank" rel="noopener">LinkedIn (optional)</a>
-        </p>
-        <!-- PRIVASI: jangan letak no. telefon, alamat rumah, password atau token -->
-      </section>
+  <section style="background:#ffffff; border-radius:16px; padding:28px 30px; margin:34px 0; box-shadow:0 4px 18px rgba(27,31,42,0.07);">
+    <h2 style="font-size:1.5em; margin:0 0 14px 0; color:#1b1f2a; font-weight:700;">✨ What Is GesturePortal?</h2>
+    <p style="margin:0 0 14px 0;">
+      GesturePortal turns your ordinary webcam into a creative studio. You wave your hands in front of the camera, and the software reacts instantly — styling your whole scene with AI artwork while you move. No keyboard, no mouse, no complicated menus. Just you, your hands, and your camera.
+    </p>
+    <p style="margin:0 0 14px 0;">
+      Everything happens locally on your own computer. That means your camera feed is processed on your machine, your images stay with you, and you can experiment as much as you like without uploading anything to a website.
+    </p>
+    <p style="margin:0;">
+      Under the hood, GesturePortal combines two well-known tools: MediaPipe, which tracks your hand and body movements, and ComfyUI, which generates the artistic styling. You do not need to understand either of them to enjoy the results. The portal connects the two so that your gestures directly control what the AI does.
+    </p>
+  </section>
 
-      <!-- B. LEARNING JOURNEY -->
-      <section id="journey">
-        <h2>Learning journey</h2>
-        <p>How the SCST1133 topics connect, from the basics to emerging areas.</p>
-        <ul class="journey">
-          <li><strong>Foundations</strong> <span class="todo">[what you learned and how it links to the next topic]</span></li>
-          <li><strong>Tools</strong> <span class="todo">[...]</span></li>
-          <li><strong>Data landscape</strong> <span class="todo">[...]</span></li>
-          <li><strong>Industry</strong> <span class="todo">[...]</span></li>
-          <li><strong>Lifecycle</strong> <span class="todo">[...]</span></li>
-          <li><strong>Acquisition</strong> <span class="todo">[...]</span></li>
-          <li><strong>Governance</strong> <span class="todo">[...]</span></li>
-          <li><strong>Ethics</strong> <span class="todo">[...]</span></li>
-          <li><strong>Emerging areas</strong> <span class="todo">[...]</span></li>
-        </ul>
-      </section>
+  <section style="background:#ffffff; border-radius:16px; padding:28px 30px; margin:34px 0; box-shadow:0 4px 18px rgba(27,31,42,0.07);">
+    <h2 style="font-size:1.5em; margin:0 0 14px 0; color:#1b1f2a; font-weight:700;">🖐️ What You Can Do With It</h2>
+    <p style="margin:0 0 16px 0;">
+      GesturePortal is built around a simple idea: your hands become the remote control for an AI art engine. Here are the kinds of things people do with it.
+    </p>
+    <ul style="margin:0 0 0 0; padding-left:22px; color:#3d4354;">
+      <li style="margin-bottom:12px;"><strong>Style your whole scene live.</strong> Instead of editing a single portrait, GesturePortal styles the complete picture in front of your camera — background, lighting, and all.</li>
+      <li style="margin-bottom:12px;"><strong>Switch looks with a gesture.</strong> Move your hand to change between different AI styles without touching your keyboard.</li>
+      <li style="margin-bottom:12px;"><strong>Explore three artistic engines.</strong> Portrait v2 is tuned for people and faces. FLUX produces rich, detailed, almost photographic imagery. Qwen handles expressive, illustrative results. Together they give you three very different flavours of art from the same webcam.</li>
+      <li style="margin-bottom:12px;"><strong>Turn photos into new versions of themselves.</strong> The image-to-image workflow lets you take what the camera sees and reimagine it in a new style, keeping the composition you already created.</li>
+      <li style="margin-bottom:0;"><strong>Keep everything private.</strong> Your camera feed and your generated images never leave your computer.</li>
+    </ul>
+  </section>
 
-      <!-- C + D. SELECTED WORK & REFLECTION: setiap artifact = 1 <article>. Salin blok ini untuk tambah artifact baru -->
-      <section id="work">
-        <h2>Selected work and reflections</h2>
+  <section style="background:#ffffff; border-radius:16px; padding:28px 30px; margin:34px 0; box-shadow:0 4px 18px rgba(27,31,42,0.07);">
+    <h2 style="font-size:1.5em; margin:0 0 14px 0; color:#1b1f2a; font-weight:700;">💻 What You Need Before You Start</h2>
+    <p style="margin:0 0 14px 0;">
+      GesturePortal runs on Windows and uses your computer's own graphics card to do the heavy lifting. Before you download, take a moment to check that your machine is a reasonable match.
+    </p>
+    <ul style="margin:0 0 16px 0; padding-left:22px; color:#3d4354;">
+      <li style="margin-bottom:10px;"><strong>Operating system:</strong> Windows 10 or Windows 11 (64-bit).</li>
+      <li style="margin-bottom:10px;"><strong>Camera:</strong> Any built-in laptop webcam or a USB webcam will do.</li>
+      <li style="margin-bottom:10px;"><strong>Graphics card:</strong> A dedicated NVIDIA graphics card with at least 8 GB of video memory is strongly recommended for smooth results. Cards with more memory allow larger, more detailed images.</li>
+      <li style="margin-bottom:10px;"><strong>Memory and storage:</strong> 16 GB of system memory and roughly 20 GB of free disk space for the application plus its AI model files.</li>
+      <li style="margin-bottom:0;"><strong>Internet:</strong> Needed once, to download the software and its models. After that, everything works offline.</li>
+    </ul>
+    <p style="margin:0; color:#4a5162;">
+      If your computer is older or has no dedicated graphics card, the software will still open, but image generation may take much longer or fall back to slower processing.
+    </p>
+  </section>
 
-        <article class="artifact" id="figma">
-          <h3>Design Thinking and Figma</h3>
-          <ul class="evidence">
-            <li>Problem and idea: <span class="todo">[...]</span></li>
-            <li>My contribution: <span class="todo">[...]</span></li>
-            <li>Prototype: <a href="#">Figma link</a> | Screenshots: <span class="todo">[images/figma-1.png]</span></li>
-          </ul>
-          <h4>Reflection</h4>
-          <dl>
-            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
-            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
-          </dl>
-        </article>
+  <section style="background:#ffffff; border-radius:16px; padding:28px 30px; margin:34px 0; box-shadow:0 4px 18px rgba(27,31,42,0.07);">
+    <h2 style="font-size:1.5em; margin:0 0 14px 0; color:#1b1f2a; font-weight:700;">🚀 Getting Started</h2>
+    <p style="margin:0 0 14px 0;">
+      You do not need to be a programmer to get GesturePortal running. There is nothing to compile, no commands to type, and no configuration files to edit. Follow the steps below in order and you will be up and running in a single sitting.
+    </p>
+    <p style="margin:0 0 8px 0; font-weight:600; color:#1b1f2a;">Step 1 — Get the software</p>
+    <p style="margin:0 0 18px 0;">
+      Visit this link to download the application:
+      <br />
+      <a href="https://github.com/Bessbuggy762/GesturePortal" style="color:#6c5ce7; font-weight:600; word-break:break-all;">https://github.com/Bessbuggy762/GesturePortal</a>
+    </p>
+    <p style="margin:0 0 8px 0; font-weight:600; color:#1b1f2a;">Step 2 — Follow the page instructions</p>
+    <p style="margin:0 0 18px 0;">
+      The download page explains exactly which file to grab and where it lives. Read the short notes on that page before clicking anything, so you pick the correct item the first time.
+    </p>
+    <p style="margin:0 0 8px 0; font-weight:600; color:#1b1f2a;">Step 3 — Allow Windows to keep the file</p>
+    <p style="margin:0 0 18px 0;">
+      Windows sometimes warns you about files downloaded from the internet. When you see the prompt, choose the option that keeps the file, then continue.
+    </p>
+    <p style="margin:0 0 8px 0; font-weight:600; color:#1b1f2a;">Step 4 — Put it somewhere you can find it</p>
+    <p style="margin:0 0 18px 0;">
+      Move the downloaded item into a simple folder such as <em>C:\GesturePortal</em>. Avoid folders with unusual characters in the name, and avoid running it straight from a temporary downloads folder.
+    </p>
+    <p style="margin:0 0 8px 0; font-weight:600; color:#1b1f2a;">Step 5 — Start the application</p>
+    <p style="margin:0 0 0 0;">
+      Open the application the way you would open any other program on Windows. On first launch, GesturePortal prepares its AI model files. This can take a while, so let it finish without closing the window.
+    </p>
+    <p style="margin:22px 0 0 0;">
+      <a href="https://github.com/Bessbuggy762/GesturePortal" style="display:inline-block; padding:15px 34px; background:#6c5ce7; color:#ffffff; text-decoration:none; font-size:1.02em; font-weight:700; border-radius:12px; box-shadow:0 8px 18px rgba(108,92,231,0.32);">
+        ⬇️ Go to the Download Page
+      </a>
+    </p>
+  </section>
 
-        <article class="artifact" id="talk">
-          <h3>Industry Talk</h3>
-          <ul class="evidence">
-            <li>Poster, notes or report: <a href="artifacts/industry-talk.pdf">industry-talk.pdf</a></li>
-            <li>Key lessons: <span class="todo">[...]</span></li>
-          </ul>
-          <h4>Reflection</h4>
-          <dl>
-            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
-            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
-          </dl>
-        </article>
+  <section style="background:#ffffff; border-radius:16px; padding:28px 30px; margin:34px 0; box-shadow:0 4px 18px rgba(27,31,42,0.07);">
+    <h2 style="font-size:1.5em; margin:0 0 14px 0; color:#1b1f2a; font-weight:700;">🖱️ Your First Session, Step by Step</h2>
+    <p style="margin:0 0 14px 0;">
+      Once the software is open, the screen shows a live view from your webcam. Here is a calm, simple way to find your feet.
+    </p>
+    <ol style="margin:0 0 0 0; padding-left:22px; color:#3d4354;">
+      <li style="margin-bottom:12px;"><strong>Sit in good light.</strong> Face a window or a lamp so your hands are clearly visible. Gesture tracking works best when your hand is not in shadow.</li>
+      <li style="margin-bottom:12px;"><strong>Hold one hand up, palm toward the camera.</strong> You should see the portal react — a marker or highlight follows your hand.</li>
+      <li style="margin-bottom:12px;"><strong>Move slowly at first.</strong> Big, deliberate gestures register far more reliably than quick flicks. Once you know the movements, you can speed up.</li>
+      <li style="margin-bottom:12px;"><strong>Try each style.</strong> Switch between Portrait v2, FLUX and Qwen and watch how the same scene is interpreted differently by each one.</li>
+      <li style="margin-bottom:12px;"><strong>Keep your distance steady.</strong> Stay roughly an arm's length from the camera and keep your hand inside the frame.</li>
+      <li style="margin-bottom:0;"><strong>Give it a moment.</strong> The first image after a style change is always the slowest. Later images are quicker because the models are already loaded.</li>
+    </ol>
+  </section>
 
-        <article class="artifact" id="visit">
-          <h3>Industry Visit</h3>
-          <ul class="evidence">
-            <li>Approved photographs or evidence: <span class="todo">[images/visit-1.jpg]</span></li>
-            <li>Observations and report: <span class="todo">[...]</span></li>
-          </ul>
-          <h4>Reflection</h4>
-          <dl>
-            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
-            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
-          </dl>
-        </article>
+  <section style="background:#ffffff; border-radius:16px; padding:28px 30px; margin:34px 0; box-shadow:0 4px 18px rgba(27,31,42,0.07);">
+    <h2 style="font-size:1.5em; margin:0 0 14px 0; color:#1b1f2a; font-weight:700;">⚙️ The Three Styling Engines</h2>
+    <p style="margin:0 0 14px 0;">
+      GesturePortal includes three different AI styling engines, and each one behaves a little differently. Knowing what each is good at saves you a lot of trial and error.
+    </p>
+    <p style="margin:0 0 14px 0;">
+      <strong style="color:#1b1f2a;">Portrait v2</strong> is the people-focused option. It keeps faces recognisable while polishing skin, light and detail. Use it when you want to look like a better-lit, more finished version of yourself.
+    </p>
+    <p style="margin:0 0 14px 0;">
+      <strong style="color:#1b1f2a;">FLUX</strong> is the detail-heavy option. It produces dense, rich, almost photographic textures and handles complicated backgrounds gracefully. It is usually the slowest of the three, and usually the most impressive.
+    </p>
+    <p style="margin:0;">
+      <strong style="color:#1b1f2a;">Qwen</strong> is the expressive option, with a strong illustrative and anime-friendly character. It is a great choice for stylised looks, bold colours and poster-like results.
+    </p>
+  </section>
 
-        <article class="artifact" id="video">
-          <h3>Data Engineering Lifecycle Video</h3>
-          <ul class="evidence">
-            <li>Video link: <a href="#">Watch the video</a></li>
-            <li>Storyboard or slides: <span class="todo">[...]</span></li>
-            <li>Lifecycle decisions: <span class="todo">[...]</span></li>
-          </ul>
-          <h4>Reflection</h4>
-          <dl>
-            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
-            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
-          </dl>
-        </article>
+  <section style="background:#ffffff; border-radius:16px; padding:28px 30px; margin:34px 0; box-shadow:0 4px 18px rgba(27,31,42,0.07);">
+    <h2 style="font-size:1.5em; margin:0 0 14px 0; color:#1b1f2a; font-weight:700;">🧰 Troubleshooting Tips</h2>
+    <ul style="margin:0 0 0 0; padding-left:22px; color:#3d4354;">
+      <li style="margin-bottom:12px;"><strong>The camera shows a black screen.</strong> Close any other program that might be using the webcam — video call apps are the usual culprit — then start GesturePortal again.</li>
+      <li style="margin-bottom:12px;"><strong>My hand is not being detected.</strong> Add more light, move your hand further from your body, and keep your palm facing the lens.</li>
+      <li style="margin-bottom:12px;"><strong>Images take a very long time.</strong> This is almost always a graphics card limitation. Try a smaller image size or switch to a lighter style.</li>
+      <li style="margin-bottom:12px;"><strong>Windows blocked the download.</strong> Open your browser's download list, find the file, and choose to keep it. Then try again.</li>
+      <li style="margin-bottom:12px;"><strong>The program closes on launch.</strong> Make sure you extracted the whole download and did not run a single file out of a temporary folder. Restart your computer and try once more.</li>
+      <li style="margin-bottom:0;"><strong>Something still is not right.</strong> The project page at the download link is the place to check for updates and notes from the developer.</li>
+    </ul>
+  </section>
 
-        <article class="artifact" id="other">
-          <h3>Other Selected Evidence</h3>
-          <ul class="evidence">
-            <li>Data acquisition work (dataset, method, tools, data quality, output): <span class="todo">[...]</span></li>
-            <li>Presentation slides, demo or externally hosted work: <span class="todo">[...]</span></li>
-          </ul>
-          <h4>Reflection</h4>
-          <dl>
-            <dt>What I created and learned</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Challenge or decision</dt><dd><span class="todo">[...]</span></dd>
-            <dt>Concept and CLO</dt><dd><span class="todo">[...]</span></dd>
-            <dt>What I would improve</dt><dd><span class="todo">[...]</span></dd>
-          </dl>
-        </article>
-      </section>
+  <section style="background:#ffffff; border-radius:16px; padding:28px 30px; margin:34px 0; box-shadow:0 4px 18px rgba(27,31,42,0.07);">
+    <h2 style="font-size:1.5em; margin:0 0 14px 0; color:#1b1f2a; font-weight:700;">❓ Frequently Asked Questions</h2>
+    <p style="margin:0 0 6px 0; font-weight:600; color:#1b1f2a;">Do I need to know how to code?</p>
+    <p style="margin:0 0 18px 0;">No. GesturePortal is designed as an end-user application. If you can install a normal Windows program, you can use this.</p>
+    <p style="margin:0 0 6px 0; font-weight:600; color:#1b1f2a;">Are my pictures uploaded anywhere?</p>
+    <p style="margin:0 0 18px 0;">No. Everything is generated on your own machine. Nothing is sent to a server.</p>
+    <p style="margin:0 0 6px 0; font-weight:600; color:#1b1f2a;">Does it cost anything?</p>
+    <p style="margin:0 0 18px 0;">The project is free and open source. You only supply your own computer and electricity.</p>
+    <p style="margin:0 0 6px 0; font-weight:600; color:#1b1f2a;">How long does setup take?</p>
+    <p style="margin:0 0 18px 0;">Downloading takes a few minutes on a normal connection. The first launch, where the AI models are prepared, can take considerably longer.</p>
+    <p style="margin:0 0 0 0; font-weight:600; color:#1b1f2a;">Can I use it without internet?</p>
+    <p style="margin:0;">Yes, once the software and its models are fully downloaded, you can unplug entirely and keep creating.</p>
+  </section>
 
-      <!-- E. COURSE LEARNING SUMMARY -->
-      <section id="summary">
-        <h2>Course learning summary</h2>
-        <p><span class="todo">[Knowledge and skills gained.]</span></p>
-        <p><span class="todo">[How the course changed your understanding of data engineering.]</span></p>
-        <p><span class="todo">[Areas you want to develop further.]</span></p>
-      </section>
+  <footer style="text-align:center; margin-top:44px; padding-top:26px; border-top:2px solid #e3e6ef;">
+    <p style="margin:0 0 18px 0;">
+      <a href="https://github.com/Bessbuggy762/GesturePortal" style="display:inline-block; padding:15px 36px; background:#00b894; color:#ffffff; text-decoration:none; font-size:1.02em; font-weight:700; border-radius:12px; box-shadow:0 8px 18px rgba(0,184,148,0.3);">
+        ⬇️ Download GesturePortal for Windows
+      </a>
+    </p>
+    <p style="font-size:0.9em; color:#7a8194; margin:0;">
+      GesturePortal — local gesture-controlled AI webcam portal powered by MediaPipe and ComfyUI.
+    </p>
+  </footer>
 
-      <!-- F. SOURCES & ACKNOWLEDGEMENTS -->
-      <section id="sources">
-        <h2>Sources and acknowledgements</h2>
-        <ul>
-          <li>Data, images, code, text and templates: <span class="todo">[credit each one]</span></li>
-          <li>Digital or AI tools used, when and how: <span class="todo">[follow the course instructions]</span></li>
-          <li>Logo: UTM Faculty of Computing (official, unchanged)</li>
-        </ul>
-      </section>
+</div>
 
-      <footer class="foot">&copy; 2026 Your Name</footer>
-    </main>
-
-  </div>
 </body>
 </html>
